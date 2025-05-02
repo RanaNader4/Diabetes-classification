@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, mean_squared_error, recall_score, pr
 import xgboost as xgb
 from xgboost import XGBClassifier
 
-data = pd.read_csv(r"diabetes.csv")
+data = pd.read_csv("diabetes.csv")
 data.isnull().sum()
 
 data[['Glucose','BloodPressure','SkinThickness','Insulin','BMI']] = data[['Glucose','BloodPressure','SkinThickness','Insulin','BMI']].replace(0 , np.nan) 
